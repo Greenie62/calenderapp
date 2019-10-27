@@ -74,7 +74,7 @@ function createElement(event){
     h3day.appendChild(document.createTextNode("Activity: " + event.name))
     var h3start=document.createElement('h3');
     var h3end=document.createElement('h3');
-    if(event.am_time === true){
+    if(event.am_time === true || event.am_time === "true"){
     h3start.appendChild(document.createTextNode("Start: " + event.start + ":00AM"))
   
     h3end.appendChild(document.createTextNode("End: " + event.end + ":00AM"))
