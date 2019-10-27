@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calender App Page</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Calender App</h1>
+    </div>
+    <div class='input-row'>
+        <h2>Add Event:</h2>
+        <h2 id='error'></h2>
+        <label='name'>Day:</label>
+        <select id='day'
+                name='day'>
+            <option value='Monday'>Monday</option>
+            <option value='Tuesday'>Tuesday</option>
+            <option value='Wednesday'>Wednesday</option>
+            <option value='Thursday'>Thursday</option>
+            <option value='Friday'>Friday</option>
+         
+            </select>
+            <label='name'>Activity:</label>
+        <input type='text' id='name' name='name' placeholder="activity..." autocomplete='off'/>
+        <label for="am">AM</label>
+        <input type='checkbox' name='am' checked>
+        <label for="pm">PM</label>
+        <input type='checkbox' name='pm' checked>
+        <label for="start">Start time:</label>
+        <input type='number' name='start' min=1 max=12 value=6>
+        <label for="end">End time:</label>
+        <input type='number' name='end' min=1 max=12 value=6>
+        <button class='enter-event-btn'>Enter</button>
+        <button class='get-events-btn'>Get Events</button>
+        <button class='load-events-btn'>Load Events</button>
+    </div>
+
+    <div class="calender">
+        <div class="day-div">
+            <div class="day-header"><h2>Monday</h2></div>
+            <div id='Monday'></div>
+        </div>
+        <div class="day-div">
+            <div class="day-header"><h2>Tuesday</h2></div>
+            <div id='Tuesday'></div>
+        </div>
+        <div class="day-div">
+            <div class="day-header"><h2>Wednesday</h2></div>
+            <div id='Wednesday'></div>
+        </div>
+        <div class="day-div">
+            <div class="day-header"><h2>Thursday</h2></div>
+            <div id='Thursday'></div>
+        </div>
+        <div class="day-div">
+            <div class="day-header"><h2>Friday</h2></div>
+            <div id='Friday'></div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Footer &copy;</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
